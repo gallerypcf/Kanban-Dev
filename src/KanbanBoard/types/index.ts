@@ -123,6 +123,11 @@ export type AppState = {
     router: RouterState,
     appEvents: AppEventsState,
     kanbanBoard: KanbanBoardState,
-    calendar: CalendarState,
 };
+
+export interface KanbanBoardInitialData {
+    boards: KanbanBoardDbRecord[];
+    records: KanbanRecord[];
+}
+
 
